@@ -1,0 +1,30 @@
+
+JavaScript:let id = pId
+JavaScript:let data = omnis_list.convertOmnisRowToJavaScriptObject(pData)
+JavaScript:debugger
+JavaScript:console.log(data)
+
+JavaScript:let target = null;
+JavaScript:if (window.top && window.top!=window) {
+JavaScript:    target = top
+# JavaScript:    console.log("top")
+JavaScript:} else if (window.parent  && window.parent!=window) {
+JavaScript:    target = window.parent
+# JavaScript:    console.log("parent")
+JavaScript:} else {
+JavaScript:    console.error("Error top window not found")
+JavaScript:}
+JavaScript:if (target) {
+JavaScript:    target.postMessage(JSON.stringify({
+JavaScript:        type:"JSC_WRAPPER",
+JavaScript:        id: id,
+JavaScript:        data: data
+JavaScript:    }),'*');
+JavaScript:}
+
+
+Quit method
+
+
+Do pId
+Do pData

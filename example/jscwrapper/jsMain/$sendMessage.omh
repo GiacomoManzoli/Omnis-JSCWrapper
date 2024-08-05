@@ -1,0 +1,1 @@
+Do oJsHelper.$sendMessageToFatClient("TEST",row(iMessage))

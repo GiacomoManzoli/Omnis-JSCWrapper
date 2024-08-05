@@ -1,0 +1,82 @@
+{
+	"ident": 1016,
+	"order": 1,
+	"objtype": "kComponent",
+	"componentlib": "OBrowser Library",
+	"componentctrl": "OBrowser Control",
+	"properties": {
+		"acceptlanguagelist": "",
+		"active": true,
+		"align": "kLeftJst",
+		"allowjsdraganddrop": false,
+		"alpha": 255,
+		"applycss": false,
+		"backalpha": 255,
+		"backcolor": "kColorWindow",
+		"candropcursor": 0,
+		"componentinfo": {
+
+		},
+		"contextmenu": "",
+		"contextmenuremovebackforward": false,
+		"cssextra": "",
+		"dataname": "",
+		"desgroup": 0,
+		"designactive": true,
+		"deslock": false,
+		"disabledefaultcontextmenu": false,
+		"disablefocus": false,
+		"disablesystemfocus": false,
+		"donotredirectconsoletotracelog": false,
+		"dragborder": false,
+		"dragiconid": 0,
+		"dragmode": "kNoDragging",
+		"dragobjectbarcolor": "kColorDefault",
+		"dragrange": "kRangeWindow",
+		"dropmode": "kAcceptNone",
+		"edgefloat": "kEFposnClient",
+		"effect": "kBorderPlain",
+		"enabled": true,
+		"fieldstyle": "",
+		"fieldstylefocused": "",
+		"font": 4,
+		"fontsize": 0,
+		"fontstyle": "kPlain",
+		"height": 473,
+		"helpfile": 0,
+		"hiliteline": false,
+		"htmlcontroloptions": {
+			"type": [
+				{
+					"name": "jsclienturl",
+					"order": 1,
+					"type": "kCharacter",
+					"subtype": "kSimplechar",
+					"sublen": 100000000
+				}
+			],
+			"data": {
+				"jsclienturl": "http://127.0.0.1:37255/jschtml/jsMain.htm"
+			}
+		},
+		"htmlcontrolsusehttp": false,
+		"ignorecertificateerrors": false,
+		"isentryfield": false,
+		"keyevents": false,
+		"left": 0,
+		"nodropcursor": 0,
+		"objlink": 0,
+		"osdropflags": "kOSDROPnone",
+		"sidepanel": false,
+		"sidepanelmode": "kSidePanelModeNone",
+		"statusevents": false,
+		"textcolor": "kColorWindowText",
+		"tooltip": "",
+		"tooltippos": "kTooltipPosMouse",
+		"top": 61,
+		"urlorcontrolname": "jscwrapper",
+		"userinfo": "",
+		"visible": true,
+		"width": 986
+	}
+}

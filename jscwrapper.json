@@ -1,0 +1,11 @@
+{
+    "data": "all",
+
+    "options": {
+        "jsclienturl": ""
+    },
+
+    "optionsDescriptions": {
+        "jsclienturl": "URL of the page with the JSClient instance."
+    }
+}

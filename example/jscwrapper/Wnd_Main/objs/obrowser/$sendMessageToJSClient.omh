@@ -1,0 +1,9 @@
+Do OJSON.$listorrowtojson(pMsgData,kUniTypeCharacter,errmsg,kOJSONoptionOmitEmpty+kOJSONoptionOmitNull) Returns json
+
+Do params.$define()
+Do params.$cols.$add("id",kCharacter,kSimplechar)
+Do params.$cols.$add("data",kCharacter,kSimplechar)
+Calculate params.id as pMsgId
+Calculate params.data as json
+
+Do $cfield.$callmethod("sendMessageToJSClient",params)

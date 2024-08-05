@@ -1,0 +1,16 @@
+On evClick
+	Breakpoint
+	
+On evControlEvent
+	
+	Switch pInfo.id
+		Case "CONTROL_READY"
+			
+		Case "HELLO_WORLD","TEST"
+			OK message [pInfo.data.C1]
+			
+		Default
+			Breakpoint
+	End Switch
+	
+	# Breakpoint pInfo

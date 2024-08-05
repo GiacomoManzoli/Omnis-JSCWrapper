@@ -1,0 +1,33 @@
+
+# Integrazione con BIMLeader - refresh del tokeb
+JavaScript:window.addEventListener(
+JavaScript:    "message",
+JavaScript:    (e) => {
+
+JavaScript:event = e
+Do oJsHelper.$parseMessageEvent(event) Returns r
+Calculate params as r
+If isclear(params)
+	Quit method
+End If
+
+
+# JavaScript:       console.log("message",event)
+# JavaScript:       let message;
+# JavaScript:       try {
+# JavaScript:           message = JSON.parse(event.data);
+# JavaScript:       } catch {
+# JavaScript:           message = {};
+# JavaScript:       }
+# JavaScript:      let messageData
+# JavaScript:      try {
+# JavaScript:          messageData = JSON.parse(message.data);
+# JavaScript:      } catch {
+# JavaScript:          messageData = {};
+# JavaScript:      }
+
+# JavaScript:      r = omnis_list.convertJavaScriptObjectToOmnisRow(messageData)
+# JavaScript:      mid = message.id
+Do $cinst.$handleFatClientMessage(params.id,params.data)
+JavaScript:    }
+JavaScript:);
