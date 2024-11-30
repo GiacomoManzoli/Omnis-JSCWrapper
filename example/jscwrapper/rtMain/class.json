@@ -2,7 +2,7 @@
 	"classtype": "kRemoteTask",
 	"omnisversion": "11.1",
 	"omnisbuild": 111037255,
-	"internalversion": 6,
+	"internalversion": 7,
 	"nextident": 1,
 	"tvardefs": [
 
@@ -33,7 +33,7 @@
 		"localtime": false,
 		"maxtime": 0,
 		"maxusers": 0,
-		"moddate": "2024-08-05 15:51:58",
+		"moddate": "2024-11-30 10:53:59",
 		"restful": false,
 		"restfulapiname": "",
 		"showascheckedout": false,

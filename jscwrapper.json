@@ -2,10 +2,12 @@
     "data": "all",
 
     "options": {
-        "jsclienturl": ""
+        "jsclienturl": "",
+        "showLoadingOverlay": true
     },
 
     "optionsDescriptions": {
-        "jsclienturl": "URL of the page with the JSClient instance."
+        "jsclienturl": "URL of the page with the JSClient instance.",
+        "showLoadingOverlay":"Shows the loading overlay until the PAGE_LOADING_COMPLETED"
     }
 }

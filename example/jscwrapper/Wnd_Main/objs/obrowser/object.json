@@ -18,7 +18,7 @@
 
 		},
 		"contextmenu": "",
-		"contextmenuremovebackforward": false,
+		"contextmenuremovebackforward": true,
 		"cssextra": "",
 		"dataname": "",
 		"desgroup": 0,
@@ -53,10 +53,18 @@
 					"type": "kCharacter",
 					"subtype": "kSimplechar",
 					"sublen": 100000000
+				},
+				{
+					"name": "showLoadingOverlay",
+					"order": 2,
+					"type": "kBoolean",
+					"subtype": 0,
+					"sublen": 0
 				}
 			],
 			"data": {
-				"jsclienturl": "http://127.0.0.1:37255/jschtml/jsMain.htm"
+				"jsclienturl": "http://127.0.0.1:37255/jschtml/jsMain.htm",
+				"showLoadingOverlay": true
 			}
 		},
 		"htmlcontrolsusehttp": false,

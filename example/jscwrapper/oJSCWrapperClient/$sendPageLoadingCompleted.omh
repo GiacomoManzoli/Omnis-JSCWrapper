@@ -1,0 +1,1 @@
+Do $cinst.$sendMessageToFatClient("PAGE_LOADING_COMPLETED",row())

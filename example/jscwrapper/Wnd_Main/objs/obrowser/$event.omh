@@ -5,6 +5,11 @@ On evControlEvent
 	
 	Switch pInfo.id
 		Case "CONTROL_READY"
+			# Omnis Control is ready to recieve requests
+			
+		Case "PAGE_LOADING_COMPLETED"
+			# The page inside the control has finished it's loading
+			# (MUST BE manually sent by the page, It's non related to the IFRAME loading)
 			
 		Case "HELLO_WORLD","TEST"
 			OK message [pInfo.data.C1]

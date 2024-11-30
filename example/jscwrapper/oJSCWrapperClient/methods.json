@@ -35,8 +35,18 @@
 		]
 	},
 	{
-		"name": "$parseMessageEvent",
+		"name": "$sendPageLoadingCompleted",
 		"order": 3,
+		"pvardefs": [
+
+		],
+		"lvardefs": [
+
+		]
+	},
+	{
+		"name": "$parseMessageEvent",
+		"order": 4,
 		"pvardefs": [
 			{
 				"name": "pEvent",

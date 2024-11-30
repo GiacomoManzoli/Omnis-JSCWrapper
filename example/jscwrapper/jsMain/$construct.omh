@@ -1,1 +1,4 @@
 # Enter your initialization code here
+For i from 1 to 1000000 step 1
+	Calculate i as i
+End For

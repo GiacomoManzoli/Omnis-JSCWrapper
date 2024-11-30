@@ -31,3 +31,5 @@ End If
 Do $cinst.$handleFatClientMessage(params.id,params.data)
 JavaScript:    }
 JavaScript:);
+
+Do oJsHelper.$sendPageLoadingCompleted()

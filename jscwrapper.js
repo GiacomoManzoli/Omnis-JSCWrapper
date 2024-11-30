@@ -16,6 +16,11 @@ class JSCWrapper {
                 this.targetFrameContent = this.targetFrame.contentWindow
             }
         }
+
+        // Hide the loading overlay
+        if (!options.showLoadingOverlay) {
+            this.hideLoadingOverlay()
+        }
     }
 
     omnisOnLoad() {
@@ -33,6 +38,10 @@ class JSCWrapper {
 
             if (data.type !== "JSC_WRAPPER") return
 
+            if (data.id === "PAGE_LOADING_COMPLETED") { // Special message to hide the loader when the page loading is completed
+                this.hideLoadingOverlay()
+            }
+
             this.sendMessageToFatClient(data.id, data.data)
         })
     }
@@ -42,7 +51,7 @@ class JSCWrapper {
     }
 
     sendMessageToJSClient(row) {
-        //console.log("send message to JSClient", row)
+        console.log("send message to JSClient", row)
 
         this.targetFrameContent.postMessage(
             JSON.stringify({
@@ -76,6 +85,12 @@ class JSCWrapper {
     sendMessageToFatClient(id, data) {
         //console.log("send message to fat client", id, data)
         jControl.sendControlEvent({ id: id, data: data }, true)
+    }
+
+
+    hideLoadingOverlay() {
+        const loader = document.querySelector("#loader-container")
+        if (loader) loader.style.display = "none"
     }
 }
 jControl.callbackObject = new JSCWrapper()
